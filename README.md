@@ -83,7 +83,7 @@ The analysis workflow includes:
 - The CSV file must be in the same folder as the notebook.  
 - Ensure all cells are run for complete results and graphs.  
 - Log transformation is used only for Welch's t-test to reduce the influence of extreme outliers.  
-- Bootstrap confidence intervals provide robust estimates even with skewed data.  
+- Bootstrap confidence intervals (Hodges–Lehmann estimator) may take around a minute to compute — please wait until it finishes.
 - Results are reproducible if the notebook is run in order.
 
 ---
@@ -101,3 +101,4 @@ The analysis workflow includes:
 - Statistical tests confirm that the difference between manual and automatic sessions is **significant and practically relevant**.  
 - The Hodges–Lehmann estimator gives a robust estimate of the typical median difference.  
 - Visualizations help intuitively compare distributions and identify patterns in user behavior.
+
